@@ -1,0 +1,8 @@
+---
+- hosts: "all"
+  remote_user: "admin"
+  tasks:
+    - name: check website
+      uri:
+        url: http://10.0.0.4
+        status_code: 200
